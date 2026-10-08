@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Social Network Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, responsive social media web application built with React and Vite, featuring dynamic post feeds, user authentication, and interactive media sharing.
 
-Currently, two official plugins are available:
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A full-featured frontend client for a social networking platform designed for high performance and clean UI interactions. Built with React and Vite, this application provides an interface for content publishing, user profile customization, interactive feeds, and social connectivity.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend Framework:** [React](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Routing:** [React Router](https://reactrouter.com/)
+- **State Management:** Context API / Redux / Zustand
+- **Styling:** CSS Modules / Tailwind CSS / Styled Components
+- **HTTP Client:** Axios / Fetch API
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Key Features
+
+- **Personalized Feed:** Main timeline displaying posts, media updates, and activity feeds.
+- **Post Creation & Sharing:** Interface for creating text posts, uploading images/media, and adding tags.
+- **User Profiles:** Customizable profile pages displaying user bio, avatars, activity history, and follower metrics.
+- **Social Interactions:** Like, bookmark functionality across posts.
+- **Network Management:** Capability to follow/unfollow users and manage connected networks.
+- **Authentication Flow:** UI components and state management for user login, registration, and session persistence.
